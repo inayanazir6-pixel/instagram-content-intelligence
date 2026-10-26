@@ -1,0 +1,215 @@
+{
+  "generated_at": "2026-10-26T08:03:18",
+  "checks": [
+    {
+      "dataset": "davidson",
+      "check": "corrupt_rows",
+      "failed_rows": 0,
+      "pct_of_rows": 0.0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "davidson",
+      "check": "null_text",
+      "failed_rows": 0,
+      "pct_of_rows": 0.0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "davidson",
+      "check": "null_label",
+      "failed_rows": 0,
+      "pct_of_rows": 0.0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "davidson",
+      "check": "invalid_label",
+      "failed_rows": 0,
+      "pct_of_rows": 0.0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "davidson",
+      "check": "empty_text",
+      "failed_rows": 0,
+      "pct_of_rows": 0.0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "davidson",
+      "check": "duplicate_text",
+      "failed_rows": 0,
+      "pct_of_rows": 0.0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "davidson",
+      "check": "mojibake_text",
+      "failed_rows": 0,
+      "pct_of_rows": 0.0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "edos",
+      "check": "corrupt_rows",
+      "failed_rows": 0,
+      "pct_of_rows": 0.0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "edos",
+      "check": "null_text",
+      "failed_rows": 0,
+      "pct_of_rows": 0.0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "edos",
+      "check": "null_label",
+      "failed_rows": 0,
+      "pct_of_rows": 0.0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "edos",
+      "check": "invalid_label",
+      "failed_rows": 0,
+      "pct_of_rows": 0.0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "edos",
+      "check": "empty_text",
+      "failed_rows": 0,
+      "pct_of_rows": 0.0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "edos",
+      "check": "duplicate_text",
+      "failed_rows": 0,
+      "pct_of_rows": 0.0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "edos",
+      "check": "mojibake_text",
+      "failed_rows": 1,
+      "pct_of_rows": 0.01,
+      "status": "WARN"
+    },
+    {
+      "dataset": "stance",
+      "check": "corrupt_rows",
+      "failed_rows": 0,
+      "pct_of_rows": 0.0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "stance",
+      "check": "null_text",
+      "failed_rows": 0,
+      "pct_of_rows": 0.0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "stance",
+      "check": "null_label",
+      "failed_rows": 0,
+      "pct_of_rows": 0.0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "stance",
+      "check": "invalid_label",
+      "failed_rows": 0,
+      "pct_of_rows": 0.0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "stance",
+      "check": "empty_text",
+      "failed_rows": 0,
+      "pct_of_rows": 0.0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "stance",
+      "check": "duplicate_text",
+      "failed_rows": 1,
+      "pct_of_rows": 0.11,
+      "status": "WARN"
+    },
+    {
+      "dataset": "stance",
+      "check": "mojibake_text",
+      "failed_rows": 0,
+      "pct_of_rows": 0.0,
+      "status": "PASS"
+    }
+  ],
+  "profiles": {
+    "davidson": {
+      "total_rows": 24783,
+      "text_length": {
+        "min": 5,
+        "avg": 85.4,
+        "max": 754
+      },
+      "distributions": {
+        "label": {
+          "offensive": 19190,
+          "neither": 4163,
+          "hate_speech": 1430
+        }
+      }
+    },
+    "edos": {
+      "total_rows": 20000,
+      "text_length": {
+        "min": 4,
+        "avg": 127.0,
+        "max": 250
+      },
+      "distributions": {
+        "label_sexist": {
+          "not sexist": 15146,
+          "sexist": 4854
+        },
+        "label_category": {
+          "none": 15146,
+          "2. derogation": 2271,
+          "3. animosity": 1665,
+          "4. prejudiced discussions": 475,
+          "1. threats, plans to harm and incitement": 443
+        },
+        "split": {
+          "train": 14000,
+          "test": 4000,
+          "dev": 2000
+        }
+      }
+    },
+    "stance": {
+      "total_rows": 949,
+      "text_length": {
+        "min": 34,
+        "avg": 105.9,
+        "max": 139
+      },
+      "distributions": {
+        "label": {
+          "against": 511,
+          "favor": 268,
+          "none": 170
+        },
+        "split": {
+          "train": 597,
+          "test": 285,
+          "validation": 67
+        }
+      }
+    }
+  }
+}
