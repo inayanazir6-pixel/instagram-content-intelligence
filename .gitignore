@@ -228,3 +228,4 @@ spark-warehouse/
 metastore_db/
 derby.log
 data/quarantine/
+models/spark/

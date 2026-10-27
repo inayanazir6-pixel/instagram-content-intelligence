@@ -63,3 +63,19 @@ EXTRA_STOPWORDS = {
     "user", "url", "amp", "rt", "semst", "like", "get", "got", "one", "would",
     "dont", "im", "thats", "i'm", "it's", "that's", "don't", "can't",
 }
+
+
+# ---- Day 3 settings ----------------------------------------------------------
+MODELS_DIR = ROOT / "models" / "spark"    # full Spark models (not committed)
+EXPORT_DIR = ROOT / "models" / "exports"  # small JSON models the app will use
+RANDOM_SEED = 42
+VOCAB_SIZE = 20000
+
+# One entry per model. `label_col` is the column to predict; `filter_label` keeps
+# only rows with that label first (sexism_type is trained on sexist comments only).
+TASKS = {
+    "toxicity":    {"source": "davidson", "label_col": "label",     "filter_label": None,     "split": "hash"},
+    "sexism":      {"source": "edos",     "label_col": "label",     "filter_label": None,     "split": "official"},
+    "sexism_type": {"source": "edos",     "label_col": "sub_label", "filter_label": "sexist", "split": "official"},
+    "stance":      {"source": "stance",   "label_col": "label",     "filter_label": None,     "split": "official"},
+}

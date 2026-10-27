@@ -1,0 +1,5 @@
+task,n_train,n_test,accuracy,baseline_accuracy,macro_f1,weighted_f1,best_reg_param
+toxicity,19421,4690,0.8403,0.7701,0.685,0.8471,0.1
+sexism,15977,3996,0.7753,0.7573,0.6893,0.7734,0.1
+sexism_type,3883,970,0.467,0.468,0.4211,0.4673,0.1
+stance,662,283,0.4912,0.6466,0.442,0.5202,0.1

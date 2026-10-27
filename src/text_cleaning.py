@@ -14,6 +14,7 @@ def clean_text(col: Column) -> Column:
     t = col
     for entity, char in _HTML_ENTITIES:                          # "&amp;" -> "&"
         t = F.regexp_replace(t, entity, char)
+    t = F.regexp_replace(t, r"&#?\w+;", " ")                     # leftover entities like &#128514;
     t = F.regexp_replace(t, "[\u2018\u2019]", "'")               # curly quotes -> '
     t = F.regexp_replace(t, r"\bRT\b", " ")                      # retweet marker
     t = F.regexp_replace(t, r"https?://\S+|www\.\S+|\[URL\]", " ")  # links

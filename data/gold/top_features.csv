@@ -1,0 +1,181 @@
+task,label,rank,term,weight
+toxicity,offensive,1,bitch,0.4828
+toxicity,offensive,2,bitches,0.2809
+toxicity,offensive,3,cunt hypocrisy,0.2507
+toxicity,offensive,4,still weak,0.2415
+toxicity,offensive,5,dips,0.2359
+toxicity,offensive,6,fuck cowboys,0.2331
+toxicity,offensive,7,no accident,0.2329
+toxicity,offensive,8,fun getting,0.231
+toxicity,offensive,9,pussy,0.231
+toxicity,offensive,10,opens,0.2304
+toxicity,offensive,11,nigga top,0.23
+toxicity,offensive,12,one smh,0.2284
+toxicity,offensive,13,billy goat,0.227
+toxicity,offensive,14,fuck flappy,0.2227
+toxicity,offensive,15,cants,0.219
+toxicity,neither,1,frustration,0.1917
+toxicity,neither,2,uncivilized,0.1838
+toxicity,neither,3,ken,0.1742
+toxicity,neither,4,relationshipgoals,0.1714
+toxicity,neither,5,getup,0.1702
+toxicity,neither,6,put fire,0.1677
+toxicity,neither,7,pnd,0.1626
+toxicity,neither,8,bird,0.1617
+toxicity,neither,9,gangs,0.1599
+toxicity,neither,10,birds,0.1595
+toxicity,neither,11,jigg,0.1594
+toxicity,neither,12,charlie,0.1579
+toxicity,neither,13,eggplant,0.1578
+toxicity,neither,14,2 favorite,0.1571
+toxicity,neither,15,basic trash,0.1568
+toxicity,hate_speech,1,faggot,0.214
+toxicity,hate_speech,2,fag,0.2107
+toxicity,hate_speech,3,ceiling,0.1901
+toxicity,hate_speech,4,priceless,0.1798
+toxicity,hate_speech,5,wetback,0.1732
+toxicity,hate_speech,6,burn bitch,0.1685
+toxicity,hate_speech,7,hate hoes,0.1657
+toxicity,hate_speech,8,get cunt,0.1653
+toxicity,hate_speech,9,bitch public,0.1635
+toxicity,hate_speech,10,screw,0.1615
+toxicity,hate_speech,11,beyonc,0.1613
+toxicity,hate_speech,12,nigglet,0.1606
+toxicity,hate_speech,13,love song,0.1599
+toxicity,hate_speech,14,hate dumb,0.1598
+toxicity,hate_speech,15,raghead,0.1598
+sexism,not_sexist,1,around time,0.1893
+sexism,not_sexist,2,mom raised,0.177
+sexism,not_sexist,3,human nature,0.1768
+sexism,not_sexist,4,cool like,0.1751
+sexism,not_sexist,5,either want,0.1743
+sexism,not_sexist,6,disgusting women,0.1741
+sexism,not_sexist,7,feminists women,0.173
+sexism,not_sexist,8,no ugly,0.1721
+sexism,not_sexist,9,know need,0.1683
+sexism,not_sexist,10,probably end,0.1681
+sexism,not_sexist,11,maybe got,0.168
+sexism,not_sexist,12,apparently woman,0.1679
+sexism,not_sexist,13,naw,0.1647
+sexism,not_sexist,14,like plague,0.1629
+sexism,not_sexist,15,remember women,0.1628
+sexism,sexist,1,bitch,0.2036
+sexism,sexist,2,hate mother,0.1646
+sexism,sexist,3,cunt,0.1627
+sexism,sexist,4,thots,0.1596
+sexism,sexist,5,pussy,0.1519
+sexism,sexist,6,jew dick,0.1483
+sexism,sexist,7,hot nice,0.1464
+sexism,sexist,8,cosby,0.1447
+sexism,sexist,9,bitches,0.1444
+sexism,sexist,10,mom shit,0.1432
+sexism,sexist,11,definently,0.1431
+sexism,sexist,12,whore,0.1408
+sexism,sexist,13,new movie,0.1389
+sexism,sexist,14,love fucking,0.1362
+sexism,sexist,15,american people,0.1355
+sexism_type,derogation,1,shit fuck,0.2766
+sexism_type,derogation,2,demon,0.2661
+sexism_type,derogation,3,bring table,0.2542
+sexism_type,derogation,4,wind,0.2537
+sexism_type,derogation,5,looks back,0.2477
+sexism_type,derogation,6,bitch prison,0.2436
+sexism_type,derogation,7,alfalfa,0.241
+sexism_type,derogation,8,delusion,0.2397
+sexism_type,derogation,9,phd,0.2382
+sexism_type,derogation,10,want exact,0.2376
+sexism_type,derogation,11,fembots,0.2358
+sexism_type,derogation,12,whales,0.235
+sexism_type,derogation,13,lingerie,0.2307
+sexism_type,derogation,14,exposing,0.2271
+sexism_type,derogation,15,dumb girls,0.2264
+sexism_type,animosity,1,pelosi,0.2454
+sexism_type,animosity,2,tit,0.2357
+sexism_type,animosity,3,get get,0.2346
+sexism_type,animosity,4,men culture,0.2266
+sexism_type,animosity,5,man hating,0.2256
+sexism_type,animosity,6,woman many,0.2245
+sexism_type,animosity,7,beautiful woman,0.2211
+sexism_type,animosity,8,don't sad,0.2205
+sexism_type,animosity,9,incoming,0.218
+sexism_type,animosity,10,love way,0.2151
+sexism_type,animosity,11,odd,0.213
+sexism_type,animosity,12,back no,0.211
+sexism_type,animosity,13,string,0.2066
+sexism_type,animosity,14,echo,0.2058
+sexism_type,animosity,15,educated,0.204
+sexism_type,prejudiced_discussions,1,fire women,0.2672
+sexism_type,prejudiced_discussions,2,oppress,0.2334
+sexism_type,prejudiced_discussions,3,james,0.2332
+sexism_type,prejudiced_discussions,4,projects,0.2252
+sexism_type,prejudiced_discussions,5,dude don't,0.2218
+sexism_type,prejudiced_discussions,6,writing,0.2218
+sexism_type,prejudiced_discussions,7,latex,0.2144
+sexism_type,prejudiced_discussions,8,4 women,0.2061
+sexism_type,prejudiced_discussions,9,easier lol,0.1977
+sexism_type,prejudiced_discussions,10,doesn't exist,0.1899
+sexism_type,prejudiced_discussions,11,man sexual,0.1872
+sexism_type,prejudiced_discussions,12,authority,0.187
+sexism_type,prejudiced_discussions,13,keeper,0.1838
+sexism_type,prejudiced_discussions,14,american society,0.1787
+sexism_type,prejudiced_discussions,15,women call,0.1749
+sexism_type,threats_plans_to_harm_and_incitement,1,knuckle,0.212
+sexism_type,threats_plans_to_harm_and_incitement,2,babbling,0.2084
+sexism_type,threats_plans_to_harm_and_incitement,3,raping women,0.2053
+sexism_type,threats_plans_to_harm_and_incitement,4,suggest,0.2
+sexism_type,threats_plans_to_harm_and_incitement,5,cost,0.1968
+sexism_type,threats_plans_to_harm_and_incitement,6,hang,0.1957
+sexism_type,threats_plans_to_harm_and_incitement,7,sure looks,0.192
+sexism_type,threats_plans_to_harm_and_incitement,8,unemployed,0.1899
+sexism_type,threats_plans_to_harm_and_incitement,9,stake,0.1893
+sexism_type,threats_plans_to_harm_and_incitement,10,choke,0.1869
+sexism_type,threats_plans_to_harm_and_incitement,11,fortunate,0.1863
+sexism_type,threats_plans_to_harm_and_incitement,12,say no,0.1828
+sexism_type,threats_plans_to_harm_and_incitement,13,strung,0.1819
+sexism_type,threats_plans_to_harm_and_incitement,14,dying,0.1819
+sexism_type,threats_plans_to_harm_and_incitement,15,whos,0.1812
+stance,against,1,feminists,0.3769
+stance,against,2,2,0.2982
+stance,against,3,block,0.285
+stance,against,4,anita,0.2793
+stance,against,5,screaming,0.2582
+stance,against,6,hatred,0.2581
+stance,against,7,handle,0.257
+stance,against,8,usa,0.2551
+stance,against,9,bs,0.2546
+stance,against,10,men's,0.2532
+stance,against,11,song,0.2523
+stance,against,12,aren't,0.2505
+stance,against,13,around,0.2504
+stance,against,14,consent,0.2498
+stance,against,15,context,0.2497
+stance,favor,1,won,0.2709
+stance,favor,2,interview,0.2313
+stance,favor,3,career,0.231
+stance,favor,4,wanting,0.2274
+stance,favor,5,stay,0.2208
+stance,favor,6,calling,0.2135
+stance,favor,7,women,0.212
+stance,favor,8,expression,0.2117
+stance,favor,9,gender equality,0.211
+stance,favor,10,kind,0.2085
+stance,favor,11,putting,0.207
+stance,favor,12,regular,0.2055
+stance,favor,13,history,0.205
+stance,favor,14,free,0.2049
+stance,favor,15,no reason,0.2045
+stance,none,1,discuss,0.2161
+stance,none,2,road,0.2125
+stance,none,3,farm,0.2046
+stance,none,4,nice,0.201
+stance,none,5,friends,0.2006
+stance,none,6,socialism,0.1986
+stance,none,7,somehow,0.1974
+stance,none,8,wait,0.1956
+stance,none,9,eat,0.1935
+stance,none,10,friend,0.1901
+stance,none,11,stand,0.187
+stance,none,12,listen,0.184
+stance,none,13,fat,0.1823
+stance,none,14,blacklivesmatter,0.18
+stance,none,15,facts,0.1796

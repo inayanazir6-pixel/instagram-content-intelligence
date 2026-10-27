@@ -1,7 +1,7 @@
 source,task,label,n,pct
-davidson,toxicity,offensive,18820,77.5
-davidson,toxicity,neither,4078,16.8
-davidson,toxicity,hate_speech,1387,5.7
+davidson,toxicity,offensive,18667,77.4
+davidson,toxicity,neither,4065,16.9
+davidson,toxicity,hate_speech,1379,5.7
 edos,sexism,not_sexist,15120,75.7
 edos,sexism,sexist,4853,24.3
 stance,stance,against,510,54.0
