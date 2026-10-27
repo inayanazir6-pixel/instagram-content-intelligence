@@ -1,0 +1,6 @@
+source,reject_reason,n
+davidson,duplicate_after_cleaning,343
+davidson,too_short_after_cleaning,155
+edos,too_short_after_cleaning,20
+edos,duplicate_after_cleaning,7
+stance,duplicate_after_cleaning,4

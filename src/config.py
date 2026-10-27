@@ -54,3 +54,12 @@ DATASET_SPECS = {
         "distributions": ["label", "split"],
     },
 }
+
+
+# ---- Day 2 settings ----------------------------------------------------------
+QUARANTINE_DIR = ROOT / "data" / "quarantine"
+MIN_WORDS = 2  # comments with fewer words after cleaning go to quarantine
+EXTRA_STOPWORDS = {
+    "user", "url", "amp", "rt", "semst", "like", "get", "got", "one", "would",
+    "dont", "im", "thats", "i'm", "it's", "that's", "don't", "can't",
+}
