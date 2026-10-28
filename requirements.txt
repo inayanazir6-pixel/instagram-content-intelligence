@@ -1,2 +1,4 @@
-pyspark==4.2.0
-numpy
+# Web app only (this file is what Streamlit Community Cloud installs).
+# The Spark pipeline needs requirements-spark.txt as well.
+streamlit
+pandas
