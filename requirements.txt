@@ -2,3 +2,4 @@
 # The Spark pipeline needs requirements-spark.txt as well.
 streamlit
 pandas
+plotly

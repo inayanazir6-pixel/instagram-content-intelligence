@@ -1,0 +1,29 @@
+name: Auto triage
+
+# Runs by itself: when a CSV is added to inbox/, every Monday, or by hand from the Actions tab.
+on:
+  push:
+    paths: ["inbox/**", "triage_cli.py", "src/triage.py", "src/reporting.py"]
+  schedule:
+    - cron: "0 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Triage every CSV in inbox/
+        run: python triage_cli.py --inbox inbox --out reports/auto
+      - name: Save the reports to the repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/auto
+          git diff --cached --quiet || (git commit -m "Auto triage: update reports" && git push)

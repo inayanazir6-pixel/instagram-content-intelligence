@@ -25,7 +25,7 @@ def clean_text(text: str) -> str:
     for entity, char in _ENTITIES:
         t = t.replace(entity, char)
     t = re.sub(r"&#?\w+;", " ", t, flags=_A)
-    t = re.sub("[\u2018\u2019]", "'", t)
+    t = re.sub("[‘’]", "'", t)
     t = re.sub(r"\bRT\b", " ", t, flags=_A)
     t = re.sub(r"https?://\S+|www\.\S+|\[URL\]", " ", t, flags=_A)
     t = re.sub(r"@\w+|\[USER\]", " ", t, flags=_A)
@@ -55,7 +55,8 @@ class TextModel:
         self.task = payload["task"]
         self.labels = payload["labels"]
         self.stop_words = {w.lower() for w in payload["stop_words"]}
-        self.vocab_index = {term: i for i, term in enumerate(payload["vocabulary"])}
+        self.vocabulary = payload["vocabulary"]
+        self.vocab_index = {term: i for i, term in enumerate(self.vocabulary)}
         self.idf = payload["idf"]
         self.coef = payload["coefficients"]      # classes x vocabulary
         self.intercepts = payload["intercepts"]
@@ -84,12 +85,14 @@ class TextModel:
         total = sum(exps)
         probs = [e / total for e in exps]
         best = max(range(len(probs)), key=probs.__getitem__)
-        vocab_terms = {j: t for t, j in self.vocab_index.items()}
-        pushes = sorted(((self.coef[best][j] * v, vocab_terms[j]) for j, v in x.items()), reverse=True)
+        top_terms = []
+        if top_k:  # skipped for big batches: it is only needed to explain one comment
+            pushes = sorted(((self.coef[best][j] * v, self.vocabulary[j]) for j, v in x.items()), reverse=True)
+            top_terms = [t for s, t in pushes[:top_k] if s > 0]
         return {
             "label": self.labels[best],
             "probabilities": dict(zip(self.labels, probs)),
-            "top_terms": [t for s, t in pushes[:top_k] if s > 0],
+            "top_terms": top_terms,
         }
 
 
@@ -100,7 +103,7 @@ def load_model(task: str) -> TextModel:
 
 
 # ---- 4. Everything for one comment -------------------------------------------
-def analyze_comment(text: str) -> dict:
+def analyze_comment(text: str, top_k: int = 5) -> dict:
     cleaned = clean_text(text)
     result = {"text_clean": cleaned, "topics": tag_topics(cleaned) or ["untagged"]}
     if len(cleaned.split()) < config.MIN_WORDS:
@@ -108,7 +111,7 @@ def analyze_comment(text: str) -> dict:
         return result
     result["too_short"] = False
     for task in ("toxicity", "sexism", "stance"):
-        result[task] = load_model(task).predict(cleaned)
+        result[task] = load_model(task).predict(cleaned, top_k)
     if result["sexism"]["label"] == "sexist":
-        result["sexism_type"] = load_model("sexism_type").predict(cleaned)
+        result["sexism_type"] = load_model("sexism_type").predict(cleaned, top_k)
     return result

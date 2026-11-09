@@ -1,0 +1,41 @@
+user,comment,action,reaction,reasons,p_toxic,p_hate,p_sexist,stance,stance_confidence,sexism_type,topics,suggested_reply
+joe,"Typical woman, cannot even handle a simple job. Go back home.",hide_report,Toxic,hate-speech score 57%,0.77,0.574,0.868,Critical,0.534,animosity,employment,No reply. Hide the comment and report it to the platform.
+rex,"Nobody wants to hear from you, you stupid feminist.",hide_report,Toxic,hate-speech score 66%,0.934,0.665,0.486,Neutral,0.518,,gender_equality,No reply. Hide the comment and report it to the platform.
+ned,I will find you and hurt you if you keep posting this.,hide_report,Toxic,threatening wording,0.785,0.111,0.136,Neutral,0.583,,untagged,No reply. Hide the comment and report it to the platform.
+kai,Follow me for free followers!!! click the link in my bio,spam,Supportive,looks like spam or self-promotion,0.71,0.065,0.058,Supportive,0.861,,untagged,No reply. Delete it as spam.
+max,"Women belong in the kitchen, not in the boardroom.",review,Critical,sexist stereotype wording,0.767,0.335,0.519,Critical,0.437,animosity,traditional_roles,"Read it first. If it breaks your rules, hide it; do not argue."
+pat,"Stop whining about harassment, you women exaggerate everything.",review,Critical,sexist stereotype wording,0.844,0.447,0.132,Critical,0.74,,harassment_violence,"Read it first. If it breaks your rules, hide it; do not argue."
+sky,"Women are too emotional to be leaders, everyone knows that.",review,Supportive,sexist stereotype wording,0.682,0.136,0.533,Supportive,0.401,derogation,untagged,"Read it first. If it breaks your rules, hide it; do not argue."
+bob,"What an idiot, shut up and stop posting this garbage.",review,Toxic,insulting or abusive wording,0.834,0.29,0.251,Critical,0.351,,untagged,"Read it first. If it breaks your rules, hide it; do not argue."
+cal,"Ugly and dumb, just delete your account.",review,Toxic,insulting or abusive wording,0.822,0.442,0.453,Critical,0.467,,untagged,"Read it first. If it breaks your rules, hide it; do not argue."
+quin,Can women even do physical jobs? Genuinely asking.,review,Supportive,sexist stereotype wording,0.471,0.049,0.586,Supportive,0.781,derogation,employment,"Read it first. If it breaks your rules, hide it; do not argue."
+ron,She got the promotion only because she is a woman.,review,Supportive,sexist stereotype wording,0.806,0.13,0.305,Supportive,0.478,,employment,"Read it first. If it breaks your rules, hide it; do not argue."
+ben,Where can I find the full report you mentioned?,question,Critical,contains a question,0.53,0.165,0.356,Critical,0.568,,untagged,Thanks for asking! [your answer]. Tell me if anything is still unclear.
+ivy,Is the event free to attend?,question,Supportive,contains a question,0.671,0.139,0.289,Supportive,0.653,,untagged,Thanks for asking! [your answer]. Tell me if anything is still unclear.
+dan,Not sure the statistics in this post are accurate. Can you share the source?,question,Neutral,contains a question,0.549,0.07,0.035,Neutral,0.5,,untagged,Thanks for asking! [your answer]. Tell me if anything is still unclear.
+gus,"Traditional roles worked fine for generations, why change them?",question,Supportive,contains a question,0.748,0.174,0.306,Supportive,0.52,,traditional_roles,Thanks for asking! [your answer]. Tell me if anything is still unclear.
+raj,I disagree that the pay gap is mostly about discrimination. Other factors matter too.,reply,Critical,"critical but not abusive: a calm, factual reply may help",0.823,0.107,0.069,Critical,0.849,,employment,Thanks for sharing your view. Here is the data behind our post: [link]. Happy to keep talking respectfully.
+tom,"Interesting, but I think this ignores what men go through as well.",reply,Critical,"critical but not abusive: a calm, factual reply may help",0.463,0.256,0.417,Critical,0.641,,untagged,Thanks for sharing your view. Here is the data behind our post: [link]. Happy to keep talking respectfully.
+lou,Feminism has gone too far and nobody is allowed to disagree anymore.,reply,Critical,"critical but not abusive: a calm, factual reply may help",0.63,0.156,0.265,Critical,0.675,,gender_equality,Thanks for sharing your view. Here is the data behind our post: [link]. Happy to keep talking respectfully.
+sam,"Thank you for sharing this, it is so important to talk about women in the workplace.",thank,Supportive,positive wording,0.348,0.078,0.106,Supportive,0.732,,employment,Thank you so much for your support! 💜
+lena,Equal pay is basic fairness. Proud of everyone speaking up!,thank,Supportive,positive wording,0.768,0.278,0.333,Supportive,0.551,,gender_equality,Thank you so much for your support! 💜
+ali,Great post. My daughter is studying engineering and this gives me hope.,thank,Critical,positive wording,0.419,0.096,0.438,Critical,0.541,,untagged,Thank you so much for your support! 💜
+noor,This is inspiring. Women's education changes whole families.,thank,Critical,positive wording,0.306,0.035,0.173,Critical,0.692,,womens_education,Thank you so much for your support! 💜
+zara,"Love this message, we need more women leaders in business.",thank,Supportive,positive wording,0.665,0.191,0.648,Supportive,0.464,derogation,untagged,Thank you so much for your support! 💜
+eva,Harassment at work is a real problem. Thank you for speaking about it.,thank,Neutral,positive wording,0.8,0.425,0.152,Neutral,0.499,,harassment_violence,Thank you so much for your support! 💜
+tia,Safe streets and safe workplaces should be a right for every woman.,thank,Supportive,supportive comment,0.695,0.427,0.597,Supportive,0.678,threats_plans_to_harm_and_incitement,untagged,Thank you so much for your support! 💜
+fay,Women should be free to choose their own career and their own life.,thank,Supportive,supportive comment,0.353,0.109,0.444,Supportive,0.95,,"employment, independence",Thank you so much for your support! 💜
+mia,"Wonderful work, sharing this with my team.",thank,Neutral,positive wording,0.209,0.062,0.154,Neutral,0.518,,untagged,Thank you so much for your support! 💜
+ned2,Men can be allies too. Thanks for including everyone in this conversation.,thank,Supportive,positive wording,0.389,0.084,0.016,Supportive,0.444,,untagged,Thank you so much for your support! 💜
+pia,"I do not agree, but thanks for explaining your view calmly.",thank,Supportive,positive wording,0.353,0.182,0.063,Supportive,0.647,,untagged,Thank you so much for your support! 💜
+sue,"Congratulations to all the women in the article, well deserved!",thank,Supportive,positive wording,0.719,0.447,0.192,Supportive,0.692,,untagged,Thank you so much for your support! 💜
+omar,The panel on women in tech starts at 10am tomorrow.,unsure,Supportive,models unsure (40%),0.49,0.077,0.33,Supportive,0.4,,untagged,Read it and decide.
+hal,Some women prefer being homemakers and that is a valid choice too.,unsure,Neutral,models unsure (36%),0.77,0.481,0.547,Neutral,0.364,animosity,traditional_roles,Read it and decide.
+maya,Girls deserve the same education and pay as boys. Equality benefits everyone.,ok,Supportive,nothing concerning,0.876,0.091,0.632,Supportive,0.505,prejudiced_discussions,"gender_equality, womens_education",
+kim,"I think hiring should only be based on skill, not on gender targets.",ok,Supportive,nothing concerning,0.636,0.125,0.26,Supportive,0.552,,"gender_equality, employment",
+amy,I was harassed at my first job and nobody helped. This matters so much.,ok,Neutral,nothing concerning,0.163,0.041,0.617,Neutral,0.464,animosity,"employment, harassment_violence",
+uma,Independence starts with education and a chance to earn your own money.,ok,Critical,nothing concerning,0.428,0.05,0.066,Critical,0.427,,"womens_education, independence",
+ian,lol,ok,Too short,too short to judge,0.0,0.0,0.0,,0.0,,untagged,
+jay,🔥🔥🔥,ok,Too short,too short to judge,0.0,0.0,0.0,,0.0,,untagged,
+liv,Education for girls is the best investment any country can make.,ok,Critical,nothing concerning,0.421,0.216,0.329,Critical,0.504,,womens_education,
+oli,This post is just propaganda.,ok,Critical,nothing concerning,0.585,0.303,0.261,Critical,0.59,,untagged,
